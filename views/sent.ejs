@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    background-color: <%=data.bg%>;
+    color: <%=data.fcolor%>;
+}
+a {
+    text-decoration: none !important;
+}
+p {
+    font-size: <%=data.font%>px;
+}
+</style>
+
+<body>
+
+    <h2>ExpressJS Form Posting / Website Rendering</h2>
+    <h3>What you sent to the webserver is below!</h3>
+
+    <p><b>First Name -</b> <%= data.fname%></p>
+    <p><b>Last Name -</b> <%= data.lname%></p>
+    <p><b>Background Color -</b> <%= data.bg%></p>
+    <p><b>Font Color -</b> <%= data.fcolor%></p>
+
+    <button><a href="/">Try it again</a></button>
+</body>
+
+</html>

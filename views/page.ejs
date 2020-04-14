@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>ExpressJS Form Posting / Website Rendering</h2>
+<p>Useragent - <%=header%></p>
+
+<form action="/form" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <label for="bg">Background Color:</label><br>
+  <input type="text" id="bg" name="bg" value="#fff"><br><br>
+  <label for="fcolor">Font Color:</label><br>
+  <input type="text" id="fcolor" name="fcolor" value="#000"><br><br>
+  <label for="font">Font Size:</label><br>
+  <select id="font" name="font">
+    <option value="16">16px</option>
+    <option value="12">12px</option>
+    <option value="24">24px</option>
+    <option value="36">36px</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/form".
+    <br>
+   If you launch this yourself, you will see it being logged to the terminal!
+</p>
+</body>
+</html>
